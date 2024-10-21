@@ -1,7 +1,11 @@
 ﻿using IText7PdfPOC.Reports.QuestPDF.InvoiceModels;
+using LibreTranslate.Net;
+using QuestPDF.Drawing;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
+using ArgosTranslate.PyNet;
+
 
 namespace IText7PdfPOC.Reports.QuestPDF
 {
@@ -12,6 +16,11 @@ namespace IText7PdfPOC.Reports.QuestPDF
         public InvoiceDocument(InvoiceModel model)
         {
             Model = model;
+            // Load the custom font
+            FontManager.RegisterFont(File.OpenRead("Fonts/Amiri-Regular.ttf"));
+            FontManager.RegisterFont(File.OpenRead("Fonts/Gulzar-Regular.ttf"));
+            FontManager.RegisterFont(File.OpenRead("Fonts/ALQALAM_ALVI_NASTALEEQ_SHIPPED.ttf"));
+            //"Gulzar-Regular", "Fonts/Gulzar-Regular.ttf"
         }
 
         public DocumentMetadata GetMetadata() => DocumentMetadata.Default;
@@ -19,6 +28,8 @@ namespace IText7PdfPOC.Reports.QuestPDF
 
         public void Compose(IDocumentContainer container)
         {
+           
+
             container
             .Page(page =>
             {
@@ -38,14 +49,23 @@ namespace IText7PdfPOC.Reports.QuestPDF
         }
         void ComposeHeader(IContainer container)
         {
-            var titleStyle = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Blue.Medium);
 
+            var titleStyle = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Blue.Medium);
+            var urduText = "میری انوائس";
+            var urduStypeAmiri = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Red.Medium)
+                .FontFamily("Amiri");
+            var urduStypeGulzar = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Red.Medium)
+                .FontFamily("Gulzar");
+            var urduStypeAlQalam = TextStyle.Default.FontSize(20).SemiBold().FontColor(Colors.Red.Medium)
+                .FontFamily("AlQalam Alvi Nastaleeq");
             container.Row(row =>
             {
                 row.RelativeItem().Column(column =>
                 {
-                    column.Item().Text($"Invoice #{Model.InvoiceNumber}").Style(titleStyle);
-
+                    //column.Item().Text($"Invoice #{Model.InvoiceNumber}").Style(titleStyle);
+                    column.Item().Text($" #{Model.InvoiceNumber} {urduText}").Style(urduStypeAmiri).DirectionFromRightToLeft();
+                    column.Item().Text($" #{Model.InvoiceNumber} {urduText}").Style(urduStypeGulzar);
+                    column.Item().Text($" #{Model.InvoiceNumber} {urduText}").Style(urduStypeAlQalam);
                     column.Item().Text(text =>
                     {
                         text.Span("Issue date: ").SemiBold();

@@ -9,7 +9,7 @@ namespace IText7PdfPOC.Reports.QuestPDF.InvoiceModels
         public static InvoiceModel GetInvoiceDetails()
         {
             var items = Enumerable
-                .Range(1, 8)
+                .Range(1, 80)
                 .Select(i => GenerateRandomOrderItem())
                 .ToList();
 

@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ArgosTranslate.PyNet" Version="2.0.3" />
     <PackageReference Include="itext.licensing.base" Version="4.1.4" />
     <PackageReference Include="itext7" Version="8.0.5" />
     <PackageReference Include="itext7.bouncy-castle-adapter" Version="8.0.5" />
     <PackageReference Include="itext7.pdfcalligraph" Version="4.0.2" />
+    <PackageReference Include="LibreTranslate.Net" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5" />
     <PackageReference Include="OxyPlot.Core" Version="2.1.2" />
     <PackageReference Include="OxyPlot.SkiaSharp" Version="2.1.2" />
