@@ -6,6 +6,14 @@ using FluentValidation.AspNetCore;
 using FluentValidation;
 using System.Reflection;
 using IText7PdfPOC;
+using IText7PdfPOC.Reports.QuestPDF.InvoiceModels;
+using IText7PdfPOC.Reports.QuestPDF;
+using QuestPDF.Fluent;
+using System.IO;
+using System.Collections;
+using QuestPDF.Infrastructure;
+
+QuestPDF.Settings.License = LicenseType.Community;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -80,6 +88,20 @@ app.MapGet("/generateTestPDF",(Delegate)(async (HttpContext context) =>
     memoryStream.Position = 0; // Reset the position to the beginning of the stream
     await memoryStream.CopyToAsync(context.Response.Body);
 
+}));
+
+app.MapGet("/newsletter/download", (Delegate)(async (HttpContext context) =>
+{
+    var guid = Guid.NewGuid().ToString();
+    var model = InvoiceDocumentDataSource.GetInvoiceDetails();
+    var document = new InvoiceDocument(model);
+    var pdf = document.GeneratePdf();
+    MemoryStream memoryStream = new MemoryStream(pdf);
+    context.Response.ContentType = "application/pdf";
+    context.Response.Headers.Add("Content-Disposition", $"inline; filename={guid}.pdf");
+    // Write the MemoryStream to the response body
+    memoryStream.Position = 0; // Reset the position to the beginning of the stream
+    await memoryStream.CopyToAsync(context.Response.Body);
 }));
 
 app.MapGet("/weatherforecast", () =>
