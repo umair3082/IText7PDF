@@ -1,0 +1,163 @@
+[
+  {
+    "product": "itext-core",
+    "licensee": {
+      "company": "student",
+      "name": "umair rasheed",
+      "email": "umairg404@gmail.com"
+    },
+    "key": "96e701620b36d6f1b2f73271dfb8478ced614076f57998214938b1abb03207cb",
+    "creationDate": "2024-09-27",
+    "expirationDate": "2024-10-28",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "SHB7R9ibDSb58tiMmYD+yefftrBM8cc2unQG91jwY+RZGAOqtbxodAx2KHs72Xko9laif1/2G7DCPD7k6Owt3t61VyZD2gNHWpkesoJeEw0JeJS8yFEKelg9/dYrZUllKIS3zIrhzVa0Q0bWoKptDdJ10HDJVtCzI8o7OlnaZJwfsQdFBJJXJjhyX+Es5RTttJYEPj7/4Os5lHf530EJOiss7/Z7Av9C6912QEbODmGI32auq8R8WPpqZRlqqFPAOfFZESRvbn82agStyMYTyA0sKBsXrGKB560ETmlWwfkrdKjgiF32tvkKwtEffJluOP+WV3RyMcXJKsLFKiG/dDtkLUA5yKe9rFfcpHVbQMD76z57XwyYvX8kunPuFlRc/jJcIuco586suqNSMrqhYBf8ZxYyOeWVg6MkkvpVhIaYnPpOJ4hww2u0of/papQnkkpywKsrOz93HYwdjNuqMTJtTYRP4Lurl2uIKQB0BT2YjqgM0ZRZXvLGdk+2SDfFFkv6GuGd645MbuJZQe5M2ZsfO/vTx0CAn7pTtZZ+ePcvElN9hdnINFI+9Zs9ZYKjrz4bekRyEhxHto7Xz3EvEBSszcYVcPtzug4xuL4g34TjSmej4F05+8wasflVvcIZAlgBk5BowkuJY2kE7jQg39vyjFDaMl2+lpWc6oc3cZ8="
+  },
+  {
+    "product": "pdfXfa",
+    "licensee": {
+      "company": "student",
+      "name": "umair rasheed",
+      "email": "umairg404@gmail.com"
+    },
+    "key": "96e701620b36d6f1b2f73271dfb8478ced614076f57998214938b1abb03207cb",
+    "creationDate": "2024-09-27",
+    "expirationDate": "2024-10-28",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "ejCQ9Bi3cildBZcq3DEqJ+JQ7yrHICz3vZdP+/uRe52KuRZw2vLxvV7L4AbQz8Eq1FtkKe4ridy0Z/dlQM584b+ExXuTYeySME+Hth7sEIwo6WFpfJRm7clZC2d/gQafSv8JF6V7VzcwA6sDkb55bhdEpKCQcGWqQpaBheylIjxH4dplBxXkgN1kUrQSwpKDMj14QFjFQXtW+1daWUztms4g++82EMLwUrgQXOQSOrunrNOQvvsgGDnoRBXXTYX1/2Dh6ZhpznOf4MVODujN//8+q+nOs9TLDTwJ1Rcs3R9YNqr5wpp8QRXC5H1hBX7WzlsV9tAWJONSzTGviY+MtIfVyzGH1FJ95mofn1SX3Me7AU7BKkfhdqi6E/UqcVPNON4CM9g/hWLwkhbHl0QPqbQgim14iEnFtASbuNBwMpzbeedc9Toag68gzqG1rN0wyDnTa4o9h5Ua7WsKSuJHH3BI2thfOlwHzjjuSdQrcuYnnC+MvNbSLl+XxaRK/QtCinDKDhw0RsA0YAL1VvAAq0bEV0RQa+dnnOEODqOcJvoNxE/ciAsimnghwNreqD2SNs55DsMjXLsnZyl+O/z2k0dbB7K+rlvbWbkbmhJqreuD0UdYwzTEG6f1nyQJv+PYPvqo2PNZ8zjrP4nOVLCMgMCiHEKScmrgT1YKz49K1dY="
+  },
+  {
+    "product": "pdfSweep",
+    "licensee": {
+      "company": "student",
+      "name": "umair rasheed",
+      "email": "umairg404@gmail.com"
+    },
+    "key": "96e701620b36d6f1b2f73271dfb8478ced614076f57998214938b1abb03207cb",
+    "creationDate": "2024-09-27",
+    "expirationDate": "2024-10-28",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "WiLGVtQB/5wTRmaXukB3w1N3Z+SQo4E6b0deUPE25DUjsqrhKg51GYzyK0yiG84kGApvZdnOBI/BQFpSuETIfwmWRg0Xq5/WFGt4w5m3CEIWjbnIYvOe2f4r4OHJnRQY90xPAAVpDZqNDBpgvuP2tCTgaqotx0v1lU7rtkIpeUJ/fVoWrYPt/sUg6wMhCVlPJzV1tjhVK8OgjHr2x1zQt/pwL2mhgalp8GynFnqG2itj/SACCOSohz0i7eX11wkpsXyM56kb3N8b1LGF8Imfj8SQDCclGfoYQmrSoqJcoApmeo6Q+VB+jaOm0YSWyZ+V6sxV/HQ8eIlfac6uNRynZrohBkmYElHY37OFKHhmzhG8CiiGOT4uEu9Ay6zlnMBaIBrzvVnctviEV5NJwN04SXasb5BFTRN6p04IzMoRBVGWzve7UeuvuKR6PYGax+oKSB7paT4xt4ouM3ktjRTawFuQ55tyXBIh+UM4TBcYxjiyHrkJb41PXbDKLirKKxBjIAfn6oojWcsHoMQUiDDf/rZUUxcE8bLCgUV5yyZPb3dLJLLkndjkvVRgYYbR8ob0tBzVRKihhNpHmkw2F1pIPmuMJpVVjxsrItpXSOgGxBWUCQBzvKKFEEnZcTnlymI+bfUPFPX37wkNi3KI8Vtr4FtE9i3lISEbCAn9fmPb4fY="
+  },
+  {
+    "product": "pdfOcr-tesseract4",
+    "licensee": {
+      "company": "student",
+      "name": "umair rasheed",
+      "email": "umairg404@gmail.com"
+    },
+    "key": "96e701620b36d6f1b2f73271dfb8478ced614076f57998214938b1abb03207cb",
+    "creationDate": "2024-09-27",
+    "expirationDate": "2024-10-28",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "UppqjhxfeqhzOBmQcZp1KNrbv8AiVlv1ADKqXB3uQys8qTvJ0Ehu8O9B3hVF4PEZHsU6DB6jQaVVTxwRzpRDIoo+ByXMVL6KFAhOUeBRdiMInwkwJmvFufitOA20hPPoaKjm4CLEhKUzJLEWO688mlz7n29cm6Su0JF61iW8Swvwims2t51UC7+34RgbpiOXN90ZroXljszuBdjIxHmyBoxcM7eOm+Eo+uRGdJL4Q2IMMgS4zegTVzUql7TK7yxcKDbi0MPJ7XsoySKnKGx5MBmNiev2SD7r5sDfWIpUZJ5kYSmB2h6pPGjxS8nVIje2jACXcrnCi6WUE9G+f6ArPRkQw5oNfqP2ifOLtdwkbImYt8xo/fdzK++axpr2d5G4kNUA4+yG/nX4VwAn01moo/M/Nn6F/5GbrrzXlcOAVt5s5QS4QCxJfJvIX/iavoe4m7+w+LjtDDK1WlSJjYNUMrGuunmLTs3Mx3LC1hQcI3qWzBBkEzKyDMiDA0s8++GpufLvxeFv3JB6XaavCj2GxRqMeWYhgAuY/Pd6gAkPoZnyMwp+xJwiK4Hb8/RdP4bYRkoZ31jz8mPAt9urFhv6fZu1Ge+IeizHpZu+yamIyEG67meLB+6mt8Jhw4doCx4D17HizLXe2VsyywJGTRCi473itYandIJ5x6OdBJleXrA="
+  },
+  {
+    "product": "pdfOptimizer",
+    "licensee": {
+      "company": "student",
+      "name": "umair rasheed",
+      "email": "umairg404@gmail.com"
+    },
+    "key": "96e701620b36d6f1b2f73271dfb8478ced614076f57998214938b1abb03207cb",
+    "creationDate": "2024-09-27",
+    "expirationDate": "2024-10-28",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "cwoZsKH/7T8RJiAKlT+KLdxg495SxOF9UEwmTae5Bj33EUoTI6kunfIpQJii/6hYwNilyFELDpSpEuTDJHYjuw+wzSisE2hzsXv2I8CcZeNAz1fVNjrXdDkETVVSWiNgni6uhy7FX1hx4IAFTVn0wP6nTkKQa4pfZk1TdBO9aj7uwllMBKMSACphKuvX5QA0ZPU6dna6BGh0/Zwo8IwvU2pw+rUha7sGe7K480Zuywy5aaRFWukIDVQt2RXabjOBspEtmkkG1wxeZl/i9g0GreML9DvN8CJzsqDJBzDjkp/aaytMa9nUxlxi1hZ2ArlCIvAnW8DfT1R0tKXVlnRF5YyJXNnv854piLEf79FUblRE6LEIv/NK/A/GUngmNIUUFPyGPh9NDv3hs4fIC8M9mNB/UC59ApF6EBqM4jjgNJy+IUyLzikcbg1WHXCFqn3BYIbG3lz912sziCtdhzcCMCUnTjShAr7ohXtwKHgfKUPI4UqgmzSYZSzqDnuX4NO4LDBfF2RfTPtixCoja7GEMLrshizWSvrZX/IqtYoHp4wRvvNNTTQ6J4oe7gN4nJBAghQsl/HgO/jR1sdGt9h/qHbcZbkjmi4WxtUR2lsuYDGY1H1Hq9gTlNDm9gCk8JCnV0RfYuJewNeCnSjcfOSlTiw3RXal+eeLTkF4B6pY29s="
+  },
+  {
+    "product": "pdfHtml",
+    "licensee": {
+      "company": "student",
+      "name": "umair rasheed",
+      "email": "umairg404@gmail.com"
+    },
+    "key": "96e701620b36d6f1b2f73271dfb8478ced614076f57998214938b1abb03207cb",
+    "creationDate": "2024-09-27",
+    "expirationDate": "2024-10-28",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "UTKJBLPlNyKyhxoTXe8NcDyXtvhE5vygdRBZ85GfGeq5czRCDJy1x+ZZMcLb21O7fILwwm5Nf9hff3+cYTgeuZH8+0gvNBfbJnzPKBeXJRzpBAZwqMFubuwD5LhYusyWsy5Ih6/C2yCtdHo9hQxByNKNAhovbrjxsGlijYKTCs6J1OBnHVYRCq1ERr3SelnDDweQl5enThrLLg08KR+5n7FW8fnIQYlGGS0TdInq0NM1S16iIu/Jrme4xnjvAzIarAf1Fkd2nNui4p1Vy24ijCail/ZvoWKKW5kPUoJrJgf+7cwwICIuFEYKJ9s/DoHHkZgN0RDMaNoBHDnBJHgy5jZNnurhYlLLsS6is+6JarvSO3q5cXUO2Yf7mQK4owcxKHTlLRmnewKRjiiVlEy7ld13WTwRxgmj2gioXbUdIbo2a2tOJQGWyldKxZoV0E0JXnS6km2lq1G3n4BNDUWLG6rTW1/3e1r6hR2ntem0ZEvj//oEehel/Fg5rLQAnBeFqU6LxUkNKgYNVkEx5QwfYjzkKdzwSY5bdlUjkPtiTscl64YP8tWiHPinjRaTDCZk/YaCl64qpbZyzPV8G90Qz1NEJHeWoLKUWwA2B1lVX0uh1k+dTYe/Wpf4A/yfcPRsQUIr4T4JluW4WixCF6Bbjy1XcDMz1UmkzBh3osZcLDs="
+  },
+  {
+    "product": "pdfCalligraph",
+    "licensee": {
+      "company": "student",
+      "name": "umair rasheed",
+      "email": "umairg404@gmail.com"
+    },
+    "key": "96e701620b36d6f1b2f73271dfb8478ced614076f57998214938b1abb03207cb",
+    "creationDate": "2024-09-27",
+    "expirationDate": "2024-10-28",
+    "onExpiration": "fail",
+    "platform": "any",
+    "licenseType": "trial",
+    "limits": {
+      "default": {
+        "limitType": "unlimited",
+        "sendEvents": false
+      }
+    },
+    "licenseVersion": "1.0.0",
+    "sendStatistics": "disabled",
+    "signature": "NJ7937yAZvtRVJ2kmRfMEAp4YRtwD4MFq5ZkxxQ7ywoAaQydvLnNgebdtxGvw02v+ZOPn/juuPnTtvnSQVzwDY7SgC547ptxh96Y7e6AAK2hV2O1tjzoqTHt8wbTMnPh0bzmY7WLuQBrcPMFKqt/MtYiWTMqUinue3o6Yl7BJg9Vxw3qC6cQm6ZI551xS4ho19JpKeBmWaNqdjyWIoQM9aGqyQS0EC8JLNzXa5ldpKViKp0N++j/9+egrdF86mYa7GjJGvx6gMQSYxqxQUxgZXeB2dA6r27FoBsljPVqFAzJfxLc+2MrByf23UnGb5OLcOvbM2SSEAmrYkgrq/6R/HmOo85w3Gmt5LrIi12zG/TSz1Vr1og9+W7oRhR706jv0FoSeTr1l45t9KeIxY/74hkkzuxY2l5TcWdhZ04pu7yebLmdDsVW7KUwEpNbmluBdQnFOXUKuVLZK3w7LEsVOoDCo3qz7rHsJIoiCZUj+GHvxuEGFarShfs5nJuxnec8nJ3GUEzy+k9eveesZvcmnVo3DN29j+BJnuNQFiP4mLT6OAnU+hm4CAzulnnhBRlCW17fBTjN4f8poz7w3H4PsNDl4xW01d/gmaecAU4Ny6m1JuDFzJinj/XchVjKNFmYuhdkkqySEpyiNKysvx2DcMr/yMsThmaG9UQhMXOS+JY="
+  }
+]

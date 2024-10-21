@@ -97,8 +97,63 @@ namespace IText8PdfPOC.Reports
                     table.AddCell(summary);
                 }
 
+
+              
+
                 // Add the table to the document
                 document.Add(table);
+
+
+                //Row Span
+                Table newtable = new Table(UnitValue.CreatePercentArray(4)).UseAllAvailableWidth();
+                Cell cell = new Cell().Add(new Paragraph(" 1,1 "));
+                newtable.AddCell(cell);
+
+                cell = new Cell().Add(new Paragraph(" 1,2 "));
+                newtable.AddCell(cell);
+
+                Cell cell23 = new Cell(2, 2).Add(new Paragraph("multi 1,3 and 1,4")
+                    .SetTextAlignment(TextAlignment.CENTER)
+                    ).SetVerticalAlignment(VerticalAlignment.MIDDLE);
+                newtable.AddCell(cell23);
+
+                cell = new Cell().Add(new Paragraph(" 2,1 "));
+                newtable.AddCell(cell);
+
+                cell = new Cell().Add(new Paragraph(" 2,2 "));
+                newtable.AddCell(cell);
+
+                document.Add(newtable);
+
+                //Col Span
+                Table ColSpantable = new Table(UnitValue.CreatePercentArray(new float[] { 1, 2, 2, 2, 1 }));
+
+                Cell ColSpantableCell = new Cell(2, 1).Add(new Paragraph("S/N"))
+                    .SetTextAlignment(TextAlignment.CENTER)
+                    .SetVerticalAlignment(VerticalAlignment.MIDDLE);
+                ColSpantable.AddCell(ColSpantableCell);
+
+                ColSpantableCell = new Cell(1, 3).Add(new Paragraph("Name")).SetTextAlignment(TextAlignment.CENTER);
+                ColSpantable.AddCell(ColSpantableCell);
+
+                ColSpantableCell = new Cell(2, 1).Add(new Paragraph("Age"))
+                    .SetTextAlignment(TextAlignment.CENTER)
+                    .SetVerticalAlignment(VerticalAlignment.MIDDLE);
+                ColSpantable.AddCell(ColSpantableCell);
+
+                ColSpantable.AddCell("SURNAME");
+                ColSpantable.AddCell("FIRST NAME");
+                ColSpantable.AddCell("MIDDLE NAME");
+                ColSpantable.AddCell("1").SetTextAlignment(TextAlignment.CENTER)
+                    .SetVerticalAlignment(VerticalAlignment.MIDDLE);
+                ColSpantable.AddCell("James");
+                ColSpantable.AddCell("Fish");
+                ColSpantable.AddCell("Stone");
+                ColSpantable.AddCell("17");
+
+                document.Add(ColSpantable);
+
+
 
                 document.Close();
                 // Set up a new PDF reader to update the document with total page count

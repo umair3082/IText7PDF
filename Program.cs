@@ -1,13 +1,11 @@
 using iText.Layout;
+using IText7PdfPOC.Reports;
 using IText8PdfPOC.Reports;
-using iText.Kernel.Pdf;
-using iText.Layout.Element;
-using IText8PdfPOC.Helpers;
-using System.IO;
-using IText8PdfPOC.Graphs;
-using iText.Kernel.Colors;
-using iText.Layout.Properties;
-using IText8PdfPOC;
+using ScottPlot.Colormaps;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using System.Reflection;
+using IText7PdfPOC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +22,7 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -72,8 +71,9 @@ app.MapGet("/generatepdf", async (HttpContext context) =>
 });
 app.MapGet("/generateTestPDF",(Delegate)(async (HttpContext context) =>
 {
-    var guid = Guid.NewGuid().ToString();   
-    var memoryStream= GenerateReport.GenerateSamplePDF();
+    var guid = Guid.NewGuid().ToString();
+    var memoryStream = GenerateReport.GenerateSamplePDF();
+    //var memoryStream = GposLookupExample.ManipulatePdf();
     context.Response.ContentType = "application/pdf";
     context.Response.Headers.Add("Content-Disposition", $"inline; filename={guid}.pdf");
     // Write the MemoryStream to the response body
@@ -96,7 +96,27 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
-
+app.MapPost("/validatecustomer", async (Customer customer, IValidator<Customer> validator) =>
+{
+    var validationResult = await validator.ValidateAsync(customer);
+    if (!validationResult.IsValid)
+    {
+        var validate = Results.ValidationProblem(validationResult.ToDictionary());
+        return validate;
+    }
+    //var validationResult = await validator.ValidateAsync(customer);
+    //if (!validationResult.IsValid)
+    //{
+    //    var errors = validationResult.Errors
+    //        .GroupBy(e => e.PropertyName)
+    //        .ToDictionary(
+    //            g => g.Key,
+    //            g => g.Select(x => x.ErrorMessage).ToArray()
+    //        );
+    //    return Results.ValidationProblem(errors);
+    //}
+    return Results.Ok(customer);
+}).WithName("validatecustomer");
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
