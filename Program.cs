@@ -15,6 +15,7 @@ using QuestPDF.Infrastructure;
 using IText7PdfPOC.LangTranslator;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using Newtonsoft.Json;
 
 QuestPDF.Settings.License = LicenseType.Community;
 
@@ -109,11 +110,11 @@ app.MapGet("/newsletter/download", (Delegate)(async (HttpContext context) =>
 
 app.MapGet("/Translate", async () =>
 {
-    //[FromBody]  List<string> texts
-    // var guid = Guid.NewGuid().ToString();
-    // var translation = await TranslateLanguage.TranslateLanguageMethod(text, "en","ja");
-    //return Results.Ok(translation);
-    var stopWatch= new System.Diagnostics.Stopwatch();
+    ////[FromBody]  List<string> texts
+    //// var guid = Guid.NewGuid().ToString();
+    //// var translation = await TranslateLanguage.TranslateLanguageMethod(text, "en","ja");
+    ////return Results.Ok(translation);
+    var stopWatch = new System.Diagnostics.Stopwatch();
     stopWatch.Start();
     var texts = new List<string> { "Hello",
     "World",
@@ -270,16 +271,30 @@ app.MapGet("/Translate", async () =>
     "I'm unmotivated",
     "I'm inspired",
     "I'm uninspired" };
-    var translations = await TranslateLanguage.TranslateLanguageMethod(texts, "en", "es");
+    //var translations = await TranslateLanguage.TranslateLanguageMethod(texts, "en", "es");
+
+    //var listedObjects = translations.ToList().Select(x => new
+    //{
+    //    Original = x.Original,
+    //    Translate = x.Translated,
+    //    ElaspedTimeMilliSeconds = stopWatch.ElapsedMilliseconds,
+    //    TotalWordsInList = texts.Count()
+    //});
+    //return Results.Ok(listedObjects);
+    //var texts = new List<string> { "Hello, how are you?", "What is your name?", "Where are you from?" };
+    var sourceLanguage = "en";
+    var targetLanguage = "fr";
+
+    
+    var translatedTexts = await BulkTranslateWithAutoML.TranslateLanguageMethod(texts, sourceLanguage, targetLanguage);
     stopWatch.Stop();
-    var listedObjects = translations.ToList().Select(x => new
+    var finallst = translatedTexts.ToList().Select(x => new
     {
-        Original = x.Original,
-        Translate = x.Translated,
+        x.Translated,
+        x.Original,
         ElaspedTimeMilliSeconds = stopWatch.ElapsedMilliseconds,
-        TotalWordsInList = texts.Count()
     });
-    return Results.Ok(listedObjects);
+    return Results.Ok(finallst);
 });
 
 app.MapGet("/weatherforecast", () =>
